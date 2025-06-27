@@ -1,10 +1,13 @@
-name: "deploy cf"
+name: deploy cf
 
-on: push
-
+# on: push
+on:
+  push:
+    branches:
+      - main
 jobs:
   deploy-cf:
-    runs-on: ubuntu-latests
+    runs-on: ubuntu-latest
     steps:
       - run: echo "do pull"
       - run: echo "make migrations"
