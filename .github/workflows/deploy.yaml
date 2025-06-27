@@ -1,0 +1,11 @@
+name: "deploy cf"
+
+on: push
+
+jobs:
+  deploy-cf:
+    runs-on: ubuntu-latests
+    steps:
+      - run: echo "do pull"
+      - run: echo "make migrations"
+      - run: echo "bye bye"
