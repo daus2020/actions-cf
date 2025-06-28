@@ -13,5 +13,8 @@ jobs:
     steps:
       - run: echo "testing gpo"
       - run: echo "just push"
-      - run: echo "Hi Mr. ${{ env.NAME }}"
+      - name: incl env dot var_name
+        run: echo "Hi Mr. ${{ env.NAME }}"
+      - name: only dollar inside comillas
+        run: echo "Hi Mr. $NAME"
       - run: echo "bye bye"
