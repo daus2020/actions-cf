@@ -9,7 +9,7 @@ jobs:
   deploy-cf:
     runs-on: ubuntu-latest
     env:
-      NAME: myName
+      NAME: CF
     steps:
       - run: echo "testing gpo"
       - run: echo "just push"
